@@ -46,8 +46,8 @@ public class MessageController {
                 .map(message -> {
                     message.setMessage_object(messageDetails.getMessage_object());
                     message.setMessage_body(messageDetails.getMessage_body());
-                    message.setId_sender(messageDetails.getId_sender());
-                    message.setId_recever(messageDetails.getId_recever());
+                    message.setidSender(messageDetails.getidSender());
+                    message.setidRecever(messageDetails.getidRecever());
                     message.setSender_timestamp(messageDetails.getSender_timestamp());
                     message.setReceiver_timestamp(messageDetails.getReceiver_timestamp());
                     Message updatedMessage = messageRepository.save(message);

@@ -16,7 +16,7 @@ public class Message {
   private Integer id_message;
   private String message_object;
   private String message_body;
-  private int id_sender;
+  private int idSender;
   private int idRecever;
   private LocalDateTime sender_timestamp;
   private LocalDateTime receiver_timestamp;
@@ -48,21 +48,21 @@ public class Message {
         this.message_body = message_body;
     }
 
-    // Getter et Setter pour id_sender
-    public int getId_sender() {
-        return id_sender;
+    // Getter et Setter pour idSender
+    public int getidSender() {
+        return idSender;
     }
 
-    public void setId_sender(int id_sender) {
-        this.id_sender = id_sender;
+    public void setidSender(int idSender) {
+        this.idSender = idSender;
     }
 
-    // Getter et Setter pour id_recever
-    public int getId_recever() {
+    // Getter et Setter pour idRecever
+    public int getidRecever() {
         return idRecever;
     }
 
-    public void setId_recever(int idRecever) {
+    public void setidRecever(int idRecever) {
         this.idRecever = idRecever;
     }
 
