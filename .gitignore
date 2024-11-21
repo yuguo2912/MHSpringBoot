@@ -1,0 +1,72 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+logs/
+spring.log
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+*.launch
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.nb-gradle/
+
+# VS Code
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Spring Boot specific
+.env
+*.h2.db
+*.mv.db
+*.trace.db
+*.old
+application.properties
+application.yml
+
+# Test and temporary files
+*.swp
+*.bak
+*.tmp
+*.out
+*.log
+
+# Security
+secrets/
+.env
+*.key
+*.pem
+
+# Linux generated files
+*.~lock.*
+~$*
