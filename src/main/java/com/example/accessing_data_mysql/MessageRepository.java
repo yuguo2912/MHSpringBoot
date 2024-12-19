@@ -2,6 +2,7 @@ package com.example.accessing_data_mysql;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import com.example.accessing_data_mysql.Message;
@@ -10,5 +11,7 @@ import com.example.accessing_data_mysql.Message;
 // CRUD refers Create, Read, Update, Delete
 
 public interface MessageRepository extends CrudRepository<Message, Integer> {
-    List<Message>findByidRecever(int id);
+    @Query(value = "SELECT m FROM Message m WHERE m.idRecever = ?1", nativeQuery = true)
+    List<Message>findLast10Messages(int id);
+    //List<Message>findByidRecever(int id);
 }

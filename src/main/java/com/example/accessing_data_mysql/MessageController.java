@@ -17,13 +17,14 @@ public class MessageController {
 
     @GetMapping
     public Iterable<Message> getAllMessages() {
-        return messageRepository.findAll();
+        return messageRepository.findAll(); 
     }
+    
 
     // Récupérer un message par ID
-    @GetMapping("/{id}")
+    @GetMapping("/filter")
     public List<Message> findByidRecever(@RequestParam int id){
-        return messageRepository.findByidRecever(id);
+        return messageRepository.findLast10Messages(id);
     }
         
     /*public ResponseEntity<Message> getMessageById(@PathVariable Integer id) {

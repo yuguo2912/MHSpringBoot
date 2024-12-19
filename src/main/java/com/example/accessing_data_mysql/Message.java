@@ -20,7 +20,7 @@ public class Message {
   private int idRecever;
   private LocalDateTime sender_timestamp;
   private LocalDateTime receiver_timestamp;
-
+    
 
     public Integer getId_message() {
         return id_message;
