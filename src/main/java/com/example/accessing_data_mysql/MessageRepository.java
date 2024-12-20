@@ -11,7 +11,7 @@ import com.example.accessing_data_mysql.Message;
 // CRUD refers Create, Read, Update, Delete
 
 public interface MessageRepository extends CrudRepository<Message, Integer> {
-    @Query(value = "SELECT m FROM Message m WHERE m.idRecever = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM Message ORDER BY id DESC LIMIT 10", nativeQuery = true)
     List<Message>findLast10Messages(int id);
     //List<Message>findByidRecever(int id);
 }
